@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="reponsive.css">
+  <title style="background-color: crimson;">Nhà của tui</title>
+  <link rel="shortcut icon" href="https://ioshay.com/icon-maker-customize-and-build-cool-app-icons-for-home-screen-1-8-ios-2.html" />
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+<script src="https://www.w3schools.com/lib/w3.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<script>
+  $(document).ready(function(){
+    $(window).scroll(function(){
+        if ($(this).scrollTop() > 200) {
+            $('.on_top').fadeIn();
+        } else {
+            $('.on_top').fadeOut();
+        }
+    });
+    $('#on_top').click(function(){
+        $("html, body").animate({ scrollTop: 0 }, 2000);
+        return false;
+    });
+});
+  function On() {
+    var a =document.getElementById("header-area");
+        var b =document.getElementById("menu");
+        var c =document.getElementById("about");
+        var d =document.getElementById("Blog");
+        var e =document.getElementById("nd");
+        var f =document.getElementById("nd2");
+        var g =document.getElementById("nd3");
+        a.style.backgroundColor= "#001D38";
+        c.style.color= "white";
+        b.style.backgroundColor= "#001D38";
+        c.style.backgroundColor= "#001D38";
+        d.style.backgroundColor= "Gray";
+        e.style.color= "black";
+        f.style.color= "black";
+        g.style.color= "black";
+  }
+  function Off(){
+        var a =document.getElementById('header-area');
+          var b =document.getElementById('menu');
+          var c =document.getElementById('about');
+          var d =document.getElementById('Blog');
+          var e =document.getElementById('nd');
+          var f =document.getElementById('nd2');
+          var g =document.getElementById('nd3');
+          a.style.backgroundColor= "#ffffff";
+          c.style.color= "black";
+          b.style.backgroundColor= "#ffffff";
+          c.style.backgroundColor= "#ffffff";
+          d.style.backgroundColor= "#F5FBFF";
+          e.style.color= "#919191";
+          f.style.color= "#919191";
+          g.style.color= "#919191";
+      }
+</script>
+<body>
+  <header>
+    <div id="header-area">
+       <div class="container">
+         <div class="flex-item">
+           <div class="logo">
+             <a href="/"><img src="img/icon.jpg"></a>
+           </div>
+           <div class="contact">
+             <div class="flex-contact">
+               <ul>
+                 <li>
+                   <a href="#">
+                     <i class="fa fa-envelope"></i>
+                     tangdat57@gmail.com
+                   </a>
+                 </li>
+                 <li>
+                  <a href="#">
+                    <i class="fa fa-phone"></i>
+                    0366 760 705
+                  </a>
+                </li>
+               </ul>
+
+               <a href="https://x3english.com/nhung-cau-noi-hay-bang-tieng-anh/" class="get-fress-quote">Get Free Quote</a>
+               <div id="btn-Change">
+                <button id="Change-ON" onclick="On()" style="background-color: lightcoral;">On</button>
+                <button id="Change-OFF" onclick="Off()" style="background-color: lightcoral;">Off</button>
+                </div>
+             </div>
+           </div>
+         </div>
+       </div>
+    </div>
+  </header>
+  <!-- Start menu-->
+  <nav id="menu">
+    <div class="container">
+     <div class="menu">
+       <input type="checkbox" id="check">
+       <label for="check" class="checkbtn"><i class="fa fa-bars"></i></label>
+      <ul id="navigation">
+          <li><a href="#">About</a></li>
+          <li><a href="#">Myblog</a></li>
+          <li><a href="#">Literacy</a></li>
+          <li><a href="#">Contact</a></li>
+      </ul>
+     </div>
+     <div class="search">
+        <a href="#"><i class="ti-search"><img src="img/search.png" alt=""></i></a>
+
+     </div>
+    </div>
+  </nav>
+  <!--End menu-->
+  <section id="Slide">
+    <div class="slide-item">
+     <div class="slide-content">
+         <p>Blog & My Profile</p>
+         <h3>I love those who can smile in trouble…</h3>
+         <a href="https://www.facebook.com/profile.php?id=100009457556078" class="btn-service">Our Services</a>
+     </div>
+    </div>
+  </section>
+   <!--About-->
+  <section id="about">
+    <div class="container">
+      <ul>
+        <li>
+          <img  class="zoom" id="avatar" src="img/tangduonggiadat.jpg" alt="">
+          <h1>Tang Duong Gia Dat</h1>
+          <div class="MXH">
+            <a href="https://www.facebook.com/profile.php?id=100009457556078"><img src="img/facebook.png" alt=""></a>
+            <a href="https://www.instagram.com/tangduong_giadat/"><img src="img/instagram.png" alt=""></a>
+            <a href="https://twitter.com/?lang=vi"><img src="img/twitter.png" alt=""></a>
+          </div>
+        </li>
+        <li>
+          <img src="img/book_icon.png" alt="">
+          <h2>About Me</h2>
+          <p>I'm TANG DUONG GIA DAT.I from Tien Giang province and now I live in HCM city.</p>
+        </li>
+        <li>
+          <img src="img/list_icon.png" alt="">
+          <h2>Experience</h2>
+          <p> I have 1 years experience in Marketing field and I’m a group leader of C.I.F company.</p>
+        </li>
+        <li>
+          <img src="img/student_icon.png" alt="">
+          <h2>Education</h2>
+          <p>I am a freshman at <strong>FPT Polytechnic</strong>.I will try my best to become a professional developer and designer.</p>
+        </li>
+      </ul>
+    </div>
+  </section>
+   <!--Blog-->
+  <section id="Blog">
+   <div class="container">
+     <h2>My Daily Blogs</h2>
+     <div class="blog-slider">
+      <ul>
+        <li>
+         <img class="zoom"  src="img/post1.jpg" alt="">
+         <h3><a href="">SG_31/07/2020</a></h3>
+         <p id="nd"> I can be changed by what happens to me but I refuse to be reduced by it...</p>
+        </li>
+        <li>
+          <img class="zoom"  src="img/post2.jpg" alt="">
+          <h3><a href="">SG_01/08/2020</a></h3>
+          <p id="nd2">We are all in the gutter, but some of us are looking at the stars...</p>
+         </li>
+         <li>
+          <img class="zoom"  src="img/post3.jpg" alt="">
+          <h3><a href="">SG_02/08/2020</a></h3>
+          <p id="nd3">When I die, I want my tombstone to offer free WiFi, just so people will visit more often...</p>
+         </li>
+    </ul>
+     </div>
+   </div>
+     <!--Edu-->
+  </section> 
+  <!--Edu-->
+  <section id="edu">
+     <div class="container">
+       <div class="edu-content">
+         <h2>Education</h2>
+         <ul>
+           <li>
+            2018 / Dec<br><br>
+            <span> Van Tiep Highschool</span><br>
+            I study at there in 3 years.In there I learn primary knowledges to as a basis for future development.<br><br>
+            2019 / Sep<br><br>
+            <span>FPT Polytechnic</span><br>
+            In there I'm beginner at IT major.I learn a skill as C/HTML/CSS,Photoshop and basic English as to presentation skills<br><br>
+            2020 / Apr<br><br>
+            <span>FPT Polytechnic</span><br>
+            I continued to learn Java/Javacript and self learning AI/Lightroom/Photography <br><br>
+            In future..<br><br>
+            I am going to learn programing languages and have graphic skills,...<br>
+           </li>
+         </ul>
+       </div>
+     </div>
+  </section>
+  <!--Contact-->
+  <section id="contact">
+     <div class="container">
+       <h2>Contact me..</h2>
+        <div class="contact-form">
+          <div class="input-field">
+            <input type="text" class="input" placeholder="Your Name" autofocus required>
+            <input type="email" class="input" placeholder="Email-Adress" autofocus required>
+            <input type="tel" class="input" placeholder="Phone"autofocus required>
+            <input type="text" class="input" placeholder="City"autofocus required>
+          </div>
+           <div class="msg">
+             <textarea placeholder="Messager"></textarea>
+             <input type="submit" class="btn">
+          </div>
+        </div>
+     </div>
+  </section>
+  <footer>
+    <div class="main-content">
+       <div class="left box">
+         <h2>About us</h2>
+         <div class="content">
+           <p>Renvoyer un Article Vos Données Personnelles Conditions<br>
+             Générales de Vente Droits de Propriété Intellectuelle Tout<br>
+             Ce Qu'il Faut Savoir Renvoyer un Article Vos Données<br> 
+             Personnelles Conditions Générales de Vente Droits de Propriété<br>
+             Intellectuelle Tout Ce Qu'il Faut Savoir</p>
+            <div class="social">
+               <a href="https://www.facebook.com/profile.php?id=100009457556078"><span class="fab fa-facebook-square"></span></a>
+               <a href="https://twitter.com/?lang=vi"><span class="fab fa-twitter"></span></a>
+               <a href="https://www.instagram.com/tangduong_giadat/"><span class="	fab fa-instagram"></span></a>
+               <a href="https://www.messenger.com/"><span class="	fab fa-facebook-messenger"></span></a>
+            </div>
+         </div>
+       </div>
+       <div class="center box">
+         <h2>Address</h2>
+         <div class="content">
+           <div class="place">
+             <span class="fas fa-map-marker-alt"></span>
+             <span class="text">CN1:48,Duong Quang Ham,Go Vap,HCM City</span>
+           </div>
+           <div class="place">
+            <span class="fas fa-map-marker-alt"></span>
+            <span class="text">CN2:0926,Phu My,Tan Phuoc,Tien Giang Province</span>
+          </div>
+          <div class="place">
+            <span class="far fa-envelope"></span>
+            <span class="text">tangdat57@gmail.com</span>
+          </div>
+         </div>
+       </div>
+       <div class="right box">
+         <h2>Guide Map</h2>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d4231.519665626581!2d106.
+        6946667697358!3d10.824175784375365!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1svi!2s!4v1596173127964!5m2!1svi!2s" 
+        width="600" height="350" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0">
+      </iframe>
+       </div>
+    </div>
+  </footer>
+  <a class="on_top" href="#top" style="display: block;"><i class="fa-arrow-circle-up fa"></i></a>
+</body>
+</html>
